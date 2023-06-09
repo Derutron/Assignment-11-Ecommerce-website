@@ -1,0 +1,138 @@
+.recent-news h2{
+    text-align: center;
+    font-family: 'poppins',sans-serif;
+    font-size: 30px;
+    font-weight: 300;
+    text-align: center;
+    color:#000000;
+    margin-top: 50px;
+}
+
+.recent-news{
+    width: 95%;
+    margin: 0 auto;
+    
+}
+
+.news-item{
+    height: 350px;
+    margin: 20px auto;
+    position: relative;
+}
+
+.news-title{
+position: absolute;
+width: 296px;
+height: 41px;
+left: 20px;
+bottom: 60px;
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 21px;
+color: #000000;
+}
+
+.news .news1{
+    background-image: url('../images/1.jpg');
+    background-repeat: no-repeat;
+    
+    
+}
+
+.news .news2{
+    background-image: url('../images/3.jpg');
+    background-repeat: no-repeat;
+}
+
+.news .news3{
+    background-image: url('../images/5.jpg');
+    background-repeat: no-repeat;
+}
+
+.news{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+   
+}
+
+.news  .date{
+    background-color: white;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+.news .day-month{
+    border: 1px solid rgb(3, 0, 0);
+    padding: 10px;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.news .day{
+    font-size: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.news .month{
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 29px;
+text-align: center;
+color: #000000;
+}
+
+.news .text{
+    margin-bottom: 20px;
+}
+
+.rmtext{
+    text-transform: uppercase;
+}
+
+a{
+    color: black;
+}
+
+.news .line{
+    position: absolute;
+    bottom: -30px;
+    height: 1px;
+    background-color: black;
+    width: 10%;
+    left: 100px;
+
+}
+
+@media (max-width:700px) {
+    .news-item{
+        flex-basis: 100%;
+    }
+}
+
+@media (min-width:700px) {
+    .news-item{
+        flex-basis: calc(50% - 20px)
+    }
+}
+
+@media (min-width:900px) {
+    .news-item{
+        flex-basis: calc(33.33% - 20px)
+    }
+}
